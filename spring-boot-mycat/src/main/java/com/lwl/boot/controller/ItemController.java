@@ -20,7 +20,7 @@ public class ItemController {
 	private ItemService itemService;
 	
 	@RequestMapping("/add")
-	public String add(Long id,String value) {
+	public String add(Long id,Integer value) {
 		Item i = new Item();
 		i.setId(id).setValue(value).setIndate(new Date());
 		itemService.add(i);
